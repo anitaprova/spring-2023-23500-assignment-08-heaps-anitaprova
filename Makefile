@@ -1,4 +1,4 @@
-OBJECTS = 
+OBJECTS = funcs.o
 CXXFLAGS = -g
 LDFLAGS =
 CXX=g++
@@ -13,7 +13,7 @@ main.o: main.cpp
 
 tests.o: tests.cpp doctest.h 
 
-
+funcs.o: funcs.cpp funcs.h
 
 clean: 
 	rm -f main tests main.o tests.o $(OBJECTS)
